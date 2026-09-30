@@ -1,0 +1,28 @@
+{
+  "name": "anshapi-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/db/seed.js && node src/server.js",
+    "dev": "node src/server.js",
+    "seed": "node src/db/seed.js",
+    "test": "node --test test/lib.test.mjs && node test/ip-detection.test.mjs"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "zod": "^3.23.8",
+    "axios": "^1.7.7",
+    "nanoid": "^5.0.7",
+    "dotenv": "^16.4.5",
+    "express-rate-limit": "^7.4.0",
+    "ipaddr.js": "^2.2.0"
+  }
+}
