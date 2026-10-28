@@ -1,5 +1,5 @@
 // Cloudflare Pages Function: /api/* aur /admin/* ko Railway backend tak forward karta hai.
-const BACKEND = "https://anshapipanel2backend-production.up.railway.app";
+const BACKEND = "https://anshapi.duckdns.org";
 
 export async function onRequest({ request }) {
   const url = new URL(request.url);
